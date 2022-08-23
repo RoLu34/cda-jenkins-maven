@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('git'){
             steps{
-                git url: 'https://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@github.com/RoLu34/cda-jenkins-maven.git', 
+                git url: 'https://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@github.com/RoLu34/cda-jenkins-maven.git',
                 branch:'preprod'
             }
         }
