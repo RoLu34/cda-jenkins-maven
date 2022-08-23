@@ -25,6 +25,9 @@ pipeline {
         stage('deploy') {
             steps {
                 echo 'Deployment...'
+                sh 'git checkout main'
+                sh 'git merge preprod'
+                sh 'git push origin main'
                 echo 'Deployment OK'
             }
         }
