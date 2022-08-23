@@ -8,13 +8,13 @@ pipeline {
         stage('git'){
             steps{
                 echo 'git...'
-                git url: 'https://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@github.com/RoLu34/cda-jenkins-maven.git', branch: 'preprod'
+                git url: 'https://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@github.com/RoLu34/cda-jenkins-maven.git', branch: 'preprod'
             }
         }
         stage('build') {
             steps {
-                 echo 'Building...'
-                 build('preprod')
+                echo 'Building...'
+                build('preprod')
             }
         }
         stage('test') {
